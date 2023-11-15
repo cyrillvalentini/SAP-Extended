@@ -1,5 +1,6 @@
 # SAP-Extended
-Extended Simple-As-Possible Computer based on Ben Eaters video series. 
+## Project
+Extended Simple-As-Possible Computer based on [Ben Eaters video series](https://www.youtube.com/watch?v=HyznrdDSSGM&list=PLowKtXNTBypGqImE405J2565dvjafglHU&pp=iAQB). 
 ![alt text](https://github.com/cyrillvalentini/SAP-Extended/blob/main/images/breadboard-computer.jpg?raw=true)
 ## Breadboard-computer
 ## Schematics and PCB
@@ -28,4 +29,3 @@ As of now, the LED-matrix epansion is still in a prototyping phase. Once finishe
 ### Planed expansions
 - ALU expansion to allow for additional operations e.g. logic operations
 - LCD character display
-- ...
