@@ -15,7 +15,7 @@ After a successfull test run, I started to expand the design. To allow for longe
 The schematics and PCB were created using KiCad 7. 
 
 ## Usage
-![alt text](https://github.com/cyrillvalentini/SAP-Extended/blob/main/images/breadboard-computer labeled.png?raw=true)
+![alt text](https://github.com/cyrillvalentini/SAP-Extended/blob/main/images/breadboard-computer%20labeled.png?raw=true)
 
 ### Programming the computer
 To set the computer to programming mode, the clock switch must first be set to manual. The LED should then stop flashing. It is then advisable to press the RESET button once to clear all registers. To be able to program the computer, the programmer must also be plugged in and the RUN/PROGRAM switch must be set to PROGRAM.
