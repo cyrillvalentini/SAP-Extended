@@ -12,7 +12,7 @@ After a successfull test run, I started to expand the design. To allow for longe
 *Simplified diagram of the changes made to the architecture.* 
 
 ## Schematics and PCB
-After building the breadboard variant, I started working on a pcb version. Being the first larger design I created there are some power related issues and some missing filtering components which prevent the computer from running completely.
+After building the breadboard variant, I started working on a pcb version. Being the first larger design I created there are some power related issues and some missing filtering components which prevent the computer from running completely. In addition to the breadboard version this design includes a 7-segment display as well as additional power input options. There is an integrated buck converter and an usb c port which can supply 5V 3A using PD.
 
 The schematics and PCB were created using KiCad 7.
 
