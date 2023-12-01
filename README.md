@@ -1,6 +1,7 @@
 # SAP-Extended
-Extended Simple-As-Possible Computer based on [Ben Eaters video series](https://www.youtube.com/watch?v=HyznrdDSSGM&list=PLowKtXNTBypGqImE405J2565dvjafglHU&pp=iAQB).
+Simple-As-Possible Computer based on [Ben Eaters video series](https://www.youtube.com/watch?v=HyznrdDSSGM&list=PLowKtXNTBypGqImE405J2565dvjafglHU&pp=iAQB).
 ## Project
+As part of my matura project, I planned and build an 8-Bit computer based around the design from Ben Eater. This repository contains the schematics, design files and instructions for the computer. 
 
 ![alt text](https://github.com/cyrillvalentini/SAP-Extended/blob/main/images/breadboard-computer.jpg?raw=true)
 ## Breadboard-computer
@@ -11,8 +12,11 @@ After a successfull test run, I started to expand the design. To allow for longe
 *Simplified diagram of the changes made to the architecture.* 
 
 ## Schematics and PCB
+After building the breadboard variant, I started working on a pcb version. Being the first larger design I created there are some power related issues and some missing filtering components which prevent the computer from running completely.
+
+The schematics and PCB were created using KiCad 7.
+
 ![alt text](https://github.com/cyrillvalentini/SAP-Extended/blob/main/images/pcb-version.jpg?raw=true)
-The schematics and PCB were created using KiCad 7. 
 
 ## Usage
 ![alt text](https://github.com/cyrillvalentini/SAP-Extended/blob/main/images/breadboard-computer%20labeled.png?raw=true)
@@ -21,7 +25,10 @@ The schematics and PCB were created using KiCad 7.
 To set the computer to programming mode, the clock switch must first be set to manual. The LED should then stop flashing. It is then advisable to press the RESET button once to clear all registers. To be able to program the computer, the programmer must also be plugged in and the RUN/PROGRAM switch must be set to PROGRAM.
 
 Now the actual programming can begin. First, the desired address must be set; without jump commands, these are iterated through in ascending order. In this case, the first command can be saved in the address 00000001. This is followed by the actual command, which can also be entered using the DIP switches. Finally, if the command requires it, the address to be accessed by the command can be entered under "DATA". Once the entire command has been typed in, the "FLASH" button can be pressed. The command should then be displayed in RAM. It is important that the address 00000000 is empty and is not used, as the computer does not always read in the first command after resetting.
+
 ### Examples
+<center>
+
 | RAM-adress| adding to numbers         | show input in output-register |
 |-----------|---------------------------|-------------------------------|
 | 0000 0001 | 0000 0001 0000 1000 (LDA) | 0000 1010 0000 0000 (INA)     |
@@ -32,6 +39,8 @@ Now the actual programming can begin. First, the desired address must be set; wi
 | 0000 0100 | 0000 0000 0000 0011 (3)   |                               |
 | ...       |                           |                               |
 | 0000 0100 | 0000 0000 0000 0001 (1)   |                               |
+
+</center>
 
 ### Run a program
 To start the program, the switch must be set to RUN. As soon as this has been done, the program can be started either manually by using the button or by switching to automatic mode. For the I/O, it should be noted that the switch next to the display can be used to switch the decimal output between unsigned binary and two's complement. In addition, the input register deletes its contents after use or can be deleted manually using the button next to it.  The commands can be found [here](https://github.com/cyrillvalentini/SAP-Extended/blob/main/instructions.pdf)
